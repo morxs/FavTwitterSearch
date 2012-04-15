@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FavTwitterSeachActivity!</string>
+    <string name="app_name">Favorite Twitter Searches</string>
+    <string name="searchURL">http://search.twitter.com/search?q=</string>
+    <string name="tagPrompt">Tag your query</string>
+    <string name="queryPrompt">Enter Twitter search query here</string>
+    <string name="taggedSearches">Tagged Searches</string>
+    <string name="edit">Edit</string>
+    <string name="clearTags">Clear Tags</string>
+    <string name="save">Save</string>
+    <string name="erase">Erase</string>
+    <string name="cancel">Cancel</string>
+    <string name="OK">OK</string>
+    <string name="missingTitle">Missing Text</string>
+    <string name="missingMessage">Please enter a search query and tag it.</string>
+    <string name="confirmTitle">Are You Sure?</string>
+    <string name="confirmMessage">This will delete all saved searches</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white"
+    android:id="@+id/tableLayout"
+    android:padding="5dp"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/queryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:inputType="text"
+            android:hint="@string/queryPrompt"
+            android:imeOptions="actionNext" >
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/tagEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/tagPrompt"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center_vertical">
+        </EditText>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/save"> 
+        </Button>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/light_orange">
+
+        <TextView
+            android:id="@+id/taggedSearchesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="2"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:text="@string/taggedSearches" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/light_orange"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/queryScrollView"
+            android:layout_width="match_parent" 
+            android:layout_span="2"
+            android:padding="5dp">
+
+            <TableLayout
+                android:id="@+id/queryTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:padding="5dp"
+                android:stretchColumns="*">
+            </TableLayout>
+        </ScrollView>
+        
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/clearTagsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clearTags" 
+            android:layout_span="2"
+            android:layout_marginTop="5dp"/>
+
+    </TableRow>
+
+</TableLayout>
